@@ -59,22 +59,22 @@ IonTooltip = {
 };
 
 Template.ionTooltip.rendered = function () {
-  $(window).on('keyup.ionPopover', function(event) {
+  $(window).on('keyup.ionTooltip', function(event) {
     if (event.which == 27) {
-      IonPopover.hide();
+      IonTooltip.hide();
     }
   });
 };
 
 Template.ionTooltip.destroyed = function () {
-  $(window).off('keyup.ionPopover');
+  $(window).off('keyup.ionTooltip');
 };
 
 Template.ionTooltip.events({
   // Handle clicking the backdrop
   'click': function (event, template) {
     if ($(event.target).hasClass('popover-backdrop')) {
-      IonPopover.hide();
+      IonTooltip.hide();
     }
   }
 });
