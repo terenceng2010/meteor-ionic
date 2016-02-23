@@ -44,9 +44,9 @@ IonTooltip = {
         if(buttonHeight<buttonWidth){
             circleDiameter = buttonHeight;
         } 
-        var backgroundImageCss = "radial-gradient(1px at "+buttonMidPoint.x+"px "+buttonMidPoint.y+"px , rgba(0, 0, 0, 0.1) 0%, rgba(68, 68, 68, 0.03) "+circleDiameter*0.7+"px, rgba(0, 0, 0, 0.3) "+circleDiameter+"px);";
+        var backgroundColorCss = "radial-gradient(1px at "+buttonMidPoint.x+"px "+buttonMidPoint.y+"px , rgba(0, 0, 0, 0.1) 0%, rgba(68, 68, 68, 0.03) "+circleDiameter*0.7+"px, rgba(0, 0, 0, 0.3) "+circleDiameter+"px);";
         
-        $backdrop.css({"background-image":backgroundImageCss});
+        $backdrop.css({"background-color":backgroundImageCss});
     }
     $arrow.css({
       left: buttonPosition.left + buttonWidth / 2 - $arrow.outerWidth() / 2 - popoverCSS.left + 'px'
