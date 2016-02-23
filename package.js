@@ -84,6 +84,9 @@ Package.onUse(function(api) {
     "components/ionPopover/ionPopover.html",
     "components/ionPopover/ionPopover.js",
 
+    "components/ionTooltip/ionTooltip.html",
+    "components/ionTooltip/ionTooltip.js",
+    
     "components/ionPopup/ionPopup.html",
     "components/ionPopup/ionPopup.js",
 
@@ -125,6 +128,7 @@ Package.onUse(function(api) {
 
     "components/ionView/ionView.html",
     "components/ionView/ionView.js"
+
 
   ], "client");
 
