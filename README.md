@@ -102,6 +102,7 @@ You can also keep track of the various other repos from the [Meteoric team](http
   * [x] ion-tabs
   * [x] ion-tab
 * [x] Tool Tip
+
 e.g
 show something without spotlight:
 IonTooltip.show("ionTooltip", {text:"This is class tab."}, $('.class-ionTab'),false);
