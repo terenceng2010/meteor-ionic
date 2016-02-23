@@ -102,5 +102,23 @@ You can also keep track of the various other repos from the [Meteoric team](http
   * [x] ion-tabs
   * [x] ion-tab
 * [x] Tool Tip
+e.g
+show something without spotlight:
+IonTooltip.show("ionTooltip", {text:"This is class tab."}, $('.class-ionTab'),false);
+
+show something with spotlight:
+IonTooltip.show("ionTooltip", {text:"This is class tab."}, $('.class-ionTab'),true);
+IonTooltip.show("ionTooltip", {text:"This is chat tab."}, $('.chat-ionTab'),true);
+IonTooltip.show("ionTooltip", {text:"This is you tab."}, $('.you-ionTab'),true);
+
+IonTooltip.show("ionTooltip", {text:"This section contains the class you have created."}, $('.createdClass'),true);
+IonTooltip.show("ionTooltip", {text:"This section contains the class you have joined."}, $('.joinedClass'),true);
+
+IonTooltip.show("ionTooltip", {text:"Click the + button to join a class."}, $('.joinedClass i.icon'),true);
+IonTooltip.show("ionTooltip", {text:"Click the + button to create a class."}, $('.createdClass i.icon'),true);
+
+TO-DO:
+show tooltip in sequence.
+
 ## License
 [MIT License](https://github.com/meteoric/meteor-ionic/blob/master/LICENSE)
