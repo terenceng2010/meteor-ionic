@@ -62,6 +62,7 @@ Template.ionTooltip.rendered = function () {
   $(window).on('keyup.ionTooltip', function(event) {
     if (event.which == 27) {
       IonTooltip.hide();
+      event.preventDefault();
     }
   });
 };
@@ -75,6 +76,7 @@ Template.ionTooltip.events({
   'click': function (event, template) {
     if ($(event.target).hasClass('popover-backdrop')) {
       IonTooltip.hide();
+      event.preventDefault();
     }
   }
 });
