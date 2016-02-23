@@ -44,7 +44,7 @@ IonTooltip = {
         if(buttonHeight<buttonWidth){
             circleDiameter = buttonHeight;
         } 
-        var backgroundColorCss = "radial-gradient(1px at "+buttonMidPoint.x+"px "+buttonMidPoint.y+"px , rgba(0, 0, 0, 0.1) 0%, rgba(68, 68, 68, 0.03) "+circleDiameter*0.7+"px, rgba(0, 0, 0, 0.3) "+circleDiameter+"px);";
+        var backgroundColorCss = "radial-gradient(1px at "+buttonMidPoint.x+"px "+buttonMidPoint.y+"px , rgba(0, 0, 0, 0.1) 0%, rgba(68, 68, 68, 0.03) "+circleDiameter*0.7+"px, rgba(0, 0, 0, 0.3) "+circleDiameter+"px)";
         
         $backdrop.css({"background":backgroundColorCss});
     }
