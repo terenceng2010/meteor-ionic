@@ -1,7 +1,7 @@
 POPOVER_BODY_PADDING = 6;
 
 IonTooltip = {
-  show: function (templateName, data, button) {
+  show: function (templateName, data, button, haveSpotLightOnButton) {
     this.template = Template[templateName];
     this.view = Blaze.renderWithData(this.template, data, $('.ionic-body').get(0));
 
@@ -13,11 +13,11 @@ IonTooltip = {
     var bodyWidth = $('body').width();
     var bodyHeight = $(window).innerHeight();
     var buttonPosition = $button.offset();
+    var buttonMidPoint = {x:buttonPosition.left+(buttonWidth/2),y:buttonPosition.top+(buttonHeight/2)};    
     var buttonWidth = $button.outerWidth();
     var buttonHeight = $button.outerHeight();
     var popoverWidth = $popover.outerWidth();
     var popoverHeight = $popover.outerHeight();
-
     var popoverCSS = {
       marginLeft: '0',
       opacity: 1,
@@ -39,6 +39,13 @@ IonTooltip = {
     }
 
     $backdrop.addClass('active');
+    if(haveSpotLightOnButton){
+        var circleDiameter = buttonWidth
+        if(buttonHeight<buttonWidth){
+            circleDiameter = buttonHeight;
+        } 
+        $backdrop.css({"background-image":"radial-gradient(1px at "+buttonMidPoint.x+"px "+buttonMidPoint.y+"px , rgba(0, 0, 0, 0.1) 0%, rgba(68, 68, 68, 0.03) "+circleDiameter*0.7+"px, rgba(0, 0, 0, 0.3) "+circleDiameter+"px);"})
+    }
     $arrow.css({
       left: buttonPosition.left + buttonWidth / 2 - $arrow.outerWidth() / 2 - popoverCSS.left + 'px'
     });
