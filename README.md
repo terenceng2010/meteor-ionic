@@ -101,6 +101,6 @@ You can also keep track of the various other repos from the [Meteoric team](http
 * [x] Tabs (requires [iron:router](https://github.com/EventedMind/iron-router) integration)
   * [x] ion-tabs
   * [x] ion-tab
-
+* [x] Tool Tip
 ## License
 [MIT License](https://github.com/meteoric/meteor-ionic/blob/master/LICENSE)
