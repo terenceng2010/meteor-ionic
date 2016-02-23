@@ -58,6 +58,11 @@ Template.ionBody.events({
     IonPopover.show(templateName, $(event.currentTarget).data(), event.currentTarget);
   },
 
+  'click [data-ion-tooltip]': function (event, template) {
+    var templateName = $(event.currentTarget).data('ion-tooltip');
+    IonTooltip.show(templateName, $(event.currentTarget).data(), event.currentTarget);
+  },
+  
   'click [data-nav-direction]': function (event, template) {
     $('[data-nav-container]').addClass('nav-view-direction-' + $(event.target).data('nav-direction'));
     $('[data-navbar-container]').addClass('nav-bar-direction-' + $(event.target).data('nav-direction'));
