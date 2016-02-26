@@ -44,11 +44,6 @@ IonKeyboard = {
 
 window.addEventListener('native.keyboardshow', function (event) {
 
-  // TODO: Android is having problems
-  if (Platform.isAndroid()) {
-    return;
-  }
-
   $('body').addClass('keyboard-open');
   var keyboardHeight = event.keyboardHeight;
 
@@ -70,11 +65,6 @@ window.addEventListener('native.keyboardshow', function (event) {
 });
 
 window.addEventListener('native.keyboardhide', function (event) {
-
-  // TODO: Android is having problems
-  if (Platform.isAndroid()) {
-    return;
-  }
 
   // $('input, textarea').blur();
   $('body').removeClass('keyboard-open');
