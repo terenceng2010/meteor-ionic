@@ -1,4 +1,4 @@
-POPOVER_BODY_PADDING = 6;
+POPOVER_BODY_PADDING = 0;
 
 IonTooltip = {
   show: function (templateName, data, button, haveSpotLightOnButton) {
