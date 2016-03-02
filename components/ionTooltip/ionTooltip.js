@@ -1,4 +1,4 @@
-POPOVER_BODY_PADDING = 0;
+POPOVER_BODY_PADDING = -5;
 
 IonTooltip = {
   show: function (templateName, data, button, haveSpotLightOnButton) {
@@ -24,12 +24,11 @@ IonTooltip = {
       left: buttonPosition.left + buttonWidth / 2 - popoverWidth / 2
     };
 
-    //dont do special handling
-    /*if (popoverCSS.left < POPOVER_BODY_PADDING) {
+    if (popoverCSS.left < POPOVER_BODY_PADDING) {
       popoverCSS.left = POPOVER_BODY_PADDING;
     } else if(popoverCSS.left + popoverWidth + POPOVER_BODY_PADDING > bodyWidth) {
       popoverCSS.left = bodyWidth - popoverWidth - POPOVER_BODY_PADDING;
-    }*/
+    }
 
     if (buttonPosition.top + buttonHeight + popoverHeight > bodyHeight) {
       popoverCSS.top = buttonPosition.top - popoverHeight;
