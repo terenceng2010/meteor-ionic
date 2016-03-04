@@ -45,7 +45,7 @@ IonKeyboard = {
 
 window.addEventListener('native.keyboardshow', function (event) {
 
-  //$('body').addClass('keyboard-open');
+  $('body').addClass('keyboard-open');
   var keyboardHeight = event.keyboardHeight;
 
   // Attach any elements that want to be attached
@@ -68,7 +68,7 @@ window.addEventListener('native.keyboardshow', function (event) {
 window.addEventListener('native.keyboardhide', function (event) {
 
   // $('input, textarea').blur();
-  //$('body').removeClass('keyboard-open');
+  $('body').removeClass('keyboard-open');
 
   // Detach any elements that were attached
   $('[data-keyboard-attach]').each(function (index, el) {
