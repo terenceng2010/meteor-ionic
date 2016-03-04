@@ -1,7 +1,6 @@
 Meteor.startup(function () {
   if (Meteor.isCordova) {
-    //IonKeyboard.disableScroll();
-    //IonKeyboard.hideKeyboardAccessoryBar();
+    IonKeyboard.disableScroll();
   }
 });
 
