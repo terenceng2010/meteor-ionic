@@ -83,7 +83,7 @@ Template.ionTooltip.destroyed = function () {
 Template.ionTooltip.events({
   // Handle clicking the backdrop
   'click': function (event, template) {
-    if ($(event.target).hasClass('popover-backdrop')) {
+    if ($(event.target).hasClass('popover-backdrop') || $(event.target).hasClass('popover')) {
       IonTooltip.hide();
       event.preventDefault();
     }
