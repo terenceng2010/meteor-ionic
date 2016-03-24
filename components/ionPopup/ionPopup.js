@@ -16,7 +16,9 @@ IonPopup = {
     // Figure out if a template or just a html string was passed
     var innerTemplate = '';
     if (options.templateName) {
-      innerTemplate = Template[options.templateName].renderFunction().value;
+      //the comment-out line is not working. so I reimplemnt its intend purpose 
+      //innerTemplate = Template[options.templateName].renderFunction().value;
+      innerTemplate = Blaze.toHTML(eval("Template."+options.templateName));
     } else if (options.template) {
       innerTemplate = '<span>' + options.template + '</span>';
     }
