@@ -46,7 +46,7 @@ Template.ionScroll.onCreated(function() {
 
 Template.ionScroll.onRendered(function() {
     if (!this.nativeScrolling.get()) {  // todo: make this reactive? Is there a use case?
-        let scroller = new IScroll(this.$(".scroller-wrapper").get(0));
+        var scroller = new IScroll(this.$(".scroller-wrapper").get(0));
 
         this.autorun(() => {
             scroller.options = _.extend(scroller.options, {
