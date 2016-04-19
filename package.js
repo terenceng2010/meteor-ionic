@@ -1,7 +1,7 @@
 Package.describe({
   name: "terenceng2010:ionic",
   summary: "Ionic components for Meteor. No Angular!",
-  version: "0.2.0",
+  version: "0.2.1",
   git: "https://github.com/terenceng2010/meteor-ionic.git"
 });
 
@@ -18,7 +18,8 @@ Package.onUse(function(api) {
     "iron:router@1.0.0",
     "tracker",
     "session",
-    "jquery"
+    "jquery",
+    "raix:iscroll",
   ], "client");
 
   api.addFiles([
@@ -93,6 +94,9 @@ Package.onUse(function(api) {
     "components/ionRadio/ionRadio.html",
     "components/ionRadio/ionRadio.js",
 
+    "components/ionScroll/ionScroll.html",
+    "components/ionScroll/ionScroll.js",
+    
     "components/ionSideMenu/ionSideMenu.html",
     "components/ionSideMenu/ionSideMenu.js",
 
