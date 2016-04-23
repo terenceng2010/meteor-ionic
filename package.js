@@ -12,7 +12,7 @@ Cordova.depends({
 Package.onUse(function(api) {
   api.versionsFrom("1.2");
   api.use([
-    "ecmascript",     
+    
     "templating",
     "underscore",
     "fastclick",
@@ -20,7 +20,7 @@ Package.onUse(function(api) {
     "tracker",
     "session",
     "jquery",
-    "raix:iscroll",
+
   ], "client");
 
   api.addFiles([
@@ -95,9 +95,6 @@ Package.onUse(function(api) {
     "components/ionRadio/ionRadio.html",
     "components/ionRadio/ionRadio.js",
 
-    "components/ionScroll/ionScroll.html",
-    "components/ionScroll/ionScroll.js",
-    
     "components/ionSideMenu/ionSideMenu.html",
     "components/ionSideMenu/ionSideMenu.js",
 
