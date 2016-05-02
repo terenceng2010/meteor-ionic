@@ -1,4 +1,7 @@
+/*
 Meteor.startup(function() {
+
+  console.log("IonInputFocus");
   if (Meteor.isCordova) {
 
     var getScrollContainer = function($element) {
@@ -62,3 +65,4 @@ Meteor.startup(function() {
 
   }
 });
+*/

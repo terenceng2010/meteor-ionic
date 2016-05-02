@@ -1,37 +1,34 @@
 Package.describe({
   name: "terenceng2010:ionic",
-  summary: "Ionic components for Meteor. No Angular!",
-  version: "0.2.1",
+  summary: "Ionic components for Meteor. No Angular! Compatible with WKWebView",
+  version: "0.3.0",
   git: "https://github.com/terenceng2010/meteor-ionic.git"
 });
 
-Cordova.depends({
-  'ionic-plugin-keyboard': '1.0.8'
-});
+//Cordova.depends({
+//  //'ionic-plugin-keyboard': '1.0.8'
+//  //'ionic-plugin-keyboard': 'https://github.com/sportstech/ionic-plugin-keyboard/tarball/a75c589918638ebf87e48f2fe6eca3feb715133e'
+//  //'ionic-plugin-keyboard': 'https://github.com/sportstech/ionic-plugin-keyboard.git'
+//  //'cordova-plugin-keyboard': '1.1.4' //https://github.com/cjpearson/cordova-plugin-keyboard
+//  'cordova-plugin-keyboard': 'file:../..//cordova-plugin-keyboard'
+//});
 
 Package.onUse(function(api) {
   api.versionsFrom("1.2");
   api.use([
-    
-    "templating",
-    "underscore",
-    "fastclick",
-    "iron:router@1.0.0",
-    "tracker",
-    "session",
-    "jquery",
-
+    "templating", "underscore",
+    //"ecmascript",
+    "fastclick", "iron:router@1.0.0", "tracker", "session", "jquery"
   ], "client");
 
   api.addFiles([
-    "vendor/snap.js",
-    "vendor/snap.css",
-    "vendor/slick.js",
-    "vendor/slick.css",
-    "vendor/slip.js"
+    "vendor/snap.js",  "vendor/snap.css", "vendor/slick.js", "vendor/slick.css", "vendor/slip.js"
   ], "client");
 
   api.addFiles([
+    //"components/ionKeyboard/ionKeyboard.js",
+    //"components/ionKeyboard/ionInputFocus.js",
+
     "components/ionActionSheet/ionActionSheet.html",
     "components/ionActionSheet/ionActionSheet.js",
 
@@ -55,9 +52,6 @@ Package.onUse(function(api) {
 
     "components/ionItem/ionItem.html",
     "components/ionItem/ionItem.js",
-
-    "components/ionKeyboard/ionKeyboard.js",
-    "components/ionKeyboard/ionInputFocus.js",
 
     "components/ionList/ionList.html",
     "components/ionList/ionList.js",
